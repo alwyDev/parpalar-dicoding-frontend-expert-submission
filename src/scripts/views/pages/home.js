@@ -5,7 +5,13 @@ const Home = {
   async render () {
     return `
       <div class="content">
-        <img class="jumbotron-image lazyload" src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80" width="450" alt="home image">
+        <img 
+          class="jumbotron-image lazyload" 
+          src="/images/jumbotron-large.jpg"
+          srcset="/images/jumbotron-small.jpg 480w, /images/jumbotron-large.jpg 800w"
+          sizes="(max-width: 600px) 480px, 800px"
+          alt="hero"
+        >
         <p class="centered">Where do you want to eat?</p>
         <h2 class="content__heading">Discover New Restaurants</h2>
         <div id="restaurants" class="restaurants">

@@ -23,7 +23,7 @@ body {
  
 .app-bar {
   padding: 8px 16px;
-  background-color: gold;
+  background-color: #0A1931;
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 10px;
@@ -52,7 +52,7 @@ body {
 }
  
 .app-bar .app-bar__brand h1 {
-  color: crimson;
+  color: #FFC947;
   text-transform: uppercase;
   font-size: 22px;
   user-select: none;
@@ -65,7 +65,7 @@ body {
   width: 150px;
   transition: all 0.3s;
   padding: 8px;
-  background-color: gold;
+  background-color: #0A1931;
   overflow: hidden;
 }
  
@@ -76,7 +76,7 @@ body {
 .app-bar .app-bar__navigation ul li a {
   display: inline-block;
   text-decoration: none;
-  color: crimson;
+  color: #FFC947;
   padding: 8px;
   margin-bottom: 5px;
   width: 100%;
@@ -84,7 +84,8 @@ body {
 }
 
 #hamburgerButton {
-  font-size: 25px;
+  font-size: 32px;
+  color: white;
 }
  
 /*
@@ -143,7 +144,7 @@ main {
   top: 10px;
   left: 0;
   display: inline-block;
-  background-color: crimson;
+  background-color: #0A1931;
   color: white;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -205,7 +206,6 @@ main {
  
 #review__date {
   font-size: small;
-  color: grey;
   text-decoration: underline;
   margin-bottom: 5px;
 }
@@ -220,7 +220,6 @@ footer {
  
 footer p {
   text-align: center;
-  color: #aaaaaa;
 }
  
 footer p a {
@@ -269,8 +268,8 @@ footer p a {
   font-size: 30px;
   font-style: italic;
   font-weight: bold;
-  color: crimson;
-  background-color: gold;
+  color: #FFC947;
+  background-color: #0A1931;
   padding: 8px;
   border-radius: 5px;
 }

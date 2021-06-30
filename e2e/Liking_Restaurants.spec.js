@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+const assert = require('assert')
 Feature('Liking Restaurants')
 
 Before(({ I }) => {
@@ -6,9 +7,7 @@ Before(({ I }) => {
 })
 
 Scenario('showing empty liked restaurants', ({ I }) => {
-  I.seeElement('#restaurants')
-
-  I.amOnPage('/')
+  I.see('', '.restaurants')
 })
 
 Scenario('liking one restaurant', async ({ I }) => {
@@ -24,6 +23,7 @@ Scenario('liking one restaurant', async ({ I }) => {
   I.click('#likeButton')
 
   I.amOnPage('/#/like')
+
   I.seeElement('.restaurant-item')
   const likedRestaurantTitle = await I.grabTextFrom('.restaurant__title')
 
